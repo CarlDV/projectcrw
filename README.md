@@ -12,8 +12,7 @@ The website design was created to address the café owner’s request for a **fa
 
 ### Mission
 - To provide not only food but also a **warm and happy experience**.  
-- To offer a **unique café experience** that stands out in the community.  
-- To serve **middle to upper-class residents** of the village.  
+- To offer a **unique café experience** that stands out..  
 
 ### Vision
 - To **expand the business through franchising**.  

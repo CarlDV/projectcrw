@@ -1,4 +1,4 @@
-# Community Café Website Project
+# Ka'Taqam Café Website Project
 
 ## 📌 Project Overview
 This repository contains the demo website for the **Ka'Taqam café** located in a village setting.  

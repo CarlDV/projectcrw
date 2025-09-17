@@ -61,6 +61,7 @@ nav a:hover {
 }
 
 /* FOR THE ORDER SECTION */
+
 .menu {
   padding: 3rem 1rem;
   text-align: center;
@@ -130,4 +131,98 @@ nav a:hover {
 
 .card button:hover {
   background: #444;
+}
+
+/* GALLERY SECTION */
+
+.gallery {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gallery h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.gallery button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.gallery button:hover {
+  background: #555;
+}
+
+/* FOR REVIEWS SECTION */
+
+.reviews {
+  text-align: center;
+}
+
+.review {
+  background-color: rgba(0, 0, 0, 0.863);
+  color: wheat;
+  padding: 2%;
+  margin: 1% auto;
+  border-radius: 10px;
+  max-width: 400px;
+  transition: 0.3s;
+}
+
+.review:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3)
+}
+
+.review .name {
+  background-color: rgba(22, 105, 212, 0.589);
+  color: rgb(255, 255, 255);
+  padding: 2%;
+  width: fit-content;
+  margin: auto;
+  border-radius: 6px;
+}
+
+/* CONTACT */
+
+.contact {
+  background-color: antiquewhite;
+  border-radius: 16px;
+  padding: 10% 3%;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact iframe {
+  max-width: 300px;
 }

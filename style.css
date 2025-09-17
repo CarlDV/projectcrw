@@ -1,18 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  animation: forbg2 50s ease infinite;
-}
-
-@keyframes forbg2 {
-    25% {background-color: black;}
-    50% {background-color: #fde750;}
-    75% {background-color: #FC2E20;}
-    100% {background-color: #000000;}
 }
 
 header {
-  background: rgba(0,0,0,0.8);
+  background: rgb(0, 0, 0);
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -37,10 +29,11 @@ nav a:hover {
 }
 
 .hero {
-  position: relative;
   background: url('forbg.jpg') no-repeat center/cover;
-  height: 95vh;
-  color: white;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -52,7 +45,6 @@ nav a:hover {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   backdrop-filter: blur(5px);
-  z-index: 1;
 }
 
 .hero h1, 
@@ -61,32 +53,7 @@ nav a:hover {
   z-index: 2;
 }
 
-.menu-grid, .gallery-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card, .gallery-grid img {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1rem;
-  background: white;
-}
-
-form input, form textarea, form button {
-  display: block;
-  width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-}
-
-.about {
-    background-color: rgba(41, 71, 71, 0.397);
-    backdrop-filter: blur(10px);
-    padding: 1%;
-    width: fit-content;
-    margin: 1% auto;
-    border-radius: 16px;
+.big {
+  font-size: 50px;
+  color: rgb(36, 109, 109);
 }

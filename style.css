@@ -6,6 +6,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.index {
+  background-image: url("forbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 header {
   background: rgb(0, 0, 0);
   padding: 1rem;
@@ -32,16 +39,12 @@ nav a:hover {
 }
 
 .hero {
-  background: url('forbg.jpg') no-repeat center/cover;
-  background-attachment: fixed;
-  position: relative;
-  min-height: 95vh;
+  min-height: 100vh;
   color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: center;}
 
 .hero::before {
   content: "";
@@ -49,7 +52,6 @@ nav a:hover {
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(83, 51, 51, 0.45);
   backdrop-filter: blur(5px);
-  z-index: 1;
 }
 
 .hero-content {
@@ -71,12 +73,9 @@ nav a:hover {
   font-family: monospace;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #ffd900;
-  width: 0;
+  width: 100%;
   animation:
-    typing 2.2s steps(22, end) forwards,
-    blink 0.7s step-end infinite;
-}
+    typing 3.2s steps(22, end) forwards; }
 
 @keyframes typing {
   from {
@@ -84,15 +83,6 @@ nav a:hover {
   }
   to {
     width: 100%;
-  }
-}
-    
-@keyframes blink {
-  0%, 100% {
-    border-color: #000000;
-  }
-  50% {
-    border-color: transparent;
   }
 }
 
@@ -369,4 +359,42 @@ nav a:hover {
 
 .contact iframe {
   max-width: 300px;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    padding: 1.5rem 1rem;
+    max-width: 90%;
+  }
+
+  .big {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .mv-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cta-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
 }

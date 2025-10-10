@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .index {
@@ -28,13 +28,13 @@ nav {
 }
 
 nav a {
-  color: wheat;
+  color: rgb(252, 252, 252);
   text-decoration: none;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: aqua;
+  color: wheat;
   transform: scale(1.07);
 }
 
@@ -130,9 +130,8 @@ nav a:hover {
 
 .cta-btn {
   display: inline-block;
-  margin-top: 1.5rem;
   padding: 0.7rem 2rem;
-  background: linear-gradient(90deg, #1669d4 60%, #4fc3f7 100%);
+  background: linear-gradient(90deg, #0000009a 60%, #1c5a776b 100%);
   color: #fff;
   font-size: 1.1rem;
   border: none;
@@ -140,12 +139,12 @@ nav a:hover {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(22,105,212,0.09);
-  transition: background 0.3s, transform 0.3s;
+  transition: 1s;
 }
 
 .cta-btn:hover {
-  background: linear-gradient(90deg, wheat 60%, wheat 100%);
-  color: #222;
+  background: linear-gradient(90deg, #6803039a 60%, #1c5a776b 100%);
+  color: #ffffff;
   transform: scale(1.07);
 }
 
@@ -370,7 +369,7 @@ nav a:hover {
 
   .hero-content {
     padding: 1.5rem 1rem;
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .big {
@@ -384,13 +383,12 @@ nav a:hover {
 
   .mission-vision {
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     align-items: center;
   }
 
   .mv-card {
-    width: 100%;
-    max-width: 300px;
+    width: 80%;
   }
 
   .cta-btn {

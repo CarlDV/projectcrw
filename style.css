@@ -1,4 +1,5 @@
 /* FOR THE MAIN SECTION */
+/* JUST EDIT WHAT YOU THINK DOESNT FIT THANKSS :) */
 
 body {
   margin: 0;
@@ -260,7 +261,7 @@ nav a:hover {
 }
 
 .gallery-grid img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 6px 14px rgba(0,0,0,0.3);
 }
 
@@ -329,23 +330,32 @@ nav a:hover {
 }
 
 .review .name {
-  background: linear-gradient(90deg, #1669d4 60%, #4fc3f7 100%);
-  color: #fff;
+  color: #000000;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 1.1rem;
   margin: 0 auto 0.7rem;
   width: fit-content;
-  box-shadow: 0 2px 8px rgba(22,105,212,0.09);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border: 1px solid #e0e0e0;
 }
 
 .review p {
   margin: 0.5rem 0;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: monospace;
 }
 
-/* CONTACT */
+.star {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border-radius: 16px;
+  padding: 2%;
+}
+
+/* CONTACT SECTION */
 
 .contact {
   background-color: antiquewhite;

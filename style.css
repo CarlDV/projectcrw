@@ -34,8 +34,8 @@ nav a:hover {
   background: url('forbg.jpg') no-repeat center/cover;
   background-attachment: fixed;
   position: relative;
-  height: 100vh;
-  color: rgb(255, 255, 255);
+  min-height: 95vh;
+  color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -46,18 +46,90 @@ nav a:hover {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(83, 51, 51, 0.45);
   backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
-.hero h1, 
-.hero p {
+.hero-content {
   position: relative;
   z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: rgba(255,255,255,0.08);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(36,109,109,0.12);
 }
 
 .big {
-  font-size: 50px;
-  color: rgb(36, 109, 109);
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.accent {
+  color: wheat;
+  text-shadow: 0 2px 8px rgba(255,217,0,0.18);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.mission-vision {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.mv-card {
+  background: rgba(255,255,255,0.18);
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  min-width: 220px;
+  max-width: 320px;
+  box-shadow: 0 2px 12px rgba(36,109,109,0.08);
+}
+
+.mv-card h2 {
+  margin-top: 0;
+  color: wheat;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.mv-card p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 2rem;
+  background: linear-gradient(90deg, #1669d4 60%, #4fc3f7 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(22,105,212,0.09);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(90deg, wheat 60%, wheat 100%);
+  color: #222;
+  transform: scale(1.07);
 }
 
 /* FOR THE ORDER SECTION */
@@ -185,30 +257,66 @@ nav a:hover {
 
 .reviews {
   text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #f9f9f9 60%, #e3e3e3 100%);
+}
+
+.reviews h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .review {
-  background-color: rgba(0, 0, 0, 0.863);
-  color: wheat;
-  padding: 2%;
-  margin: 1% auto;
-  border-radius: 10px;
-  max-width: 400px;
-  transition: 0.3s;
+  background: #fff;
+  color: #222;
+  padding: 1.5rem 1rem;
+  border-radius: 14px;
+  max-width: 420px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  margin: 0;
 }
 
 .review:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3)
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
 .review .name {
-  background-color: rgba(22, 105, 212, 0.589);
-  color: rgb(255, 255, 255);
-  padding: 2%;
+  background: linear-gradient(90deg, #1669d4 60%, #4fc3f7 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin: 0 auto 0.7rem;
   width: fit-content;
-  margin: auto;
-  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(22,105,212,0.09);
+}
+
+.review p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* CONTACT */

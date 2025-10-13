@@ -14,11 +14,13 @@ body {
 }
 
 header {
-  background: rgb(0, 0, 0);
   padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-image: url('forheader.jpg');
+  object-fit: cover;
+  border-radius: 0 0 5rem 5rem;
 }
 
 nav {
@@ -28,13 +30,15 @@ nav {
 }
 
 nav a {
-  color: rgb(252, 252, 252);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: 0.3s;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
-  color: wheat;
+  color: rgb(0, 0, 2);
   transform: scale(1.07);
 }
 
@@ -44,7 +48,8 @@ nav a:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .hero::before {
   content: "";
@@ -63,6 +68,7 @@ nav a:hover {
   background: rgba(255,255,255,0.08);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(36,109,109,0.12);
+  border: 2px dashed rgba(255, 255, 255, 0.164);
 }
 
 .big {
@@ -74,20 +80,23 @@ nav a:hover {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  animation:
-    typing 3.2s steps(22, end) forwards; }
+  animation: pul 4s linear infinite; 
+}
 
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes pul {
+  0% {
+    opacity: 1;
   }
-  to {
-    width: 100%;
+  50% {
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 .accent {
-  color: wheat;
   text-shadow: 0 2px 8px rgba(255,217,0,0.18);
 }
 
@@ -116,10 +125,10 @@ nav a:hover {
 
 .mv-card h2 {
   margin-top: 0;
-  color: wheat;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
+  animation: pul 4s linear infinite;
 }
 
 .mv-card p {
@@ -347,9 +356,7 @@ nav a:hover {
 /* CONTACT SECTION */
 
 .contact {
-  background-color: antiquewhite;
-  border-radius: 16px;
-  padding: 10% 3%;
+  padding: 3% 3%;
 }
 
 .contact a {

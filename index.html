@@ -9,18 +9,33 @@
 </head>
 <body class="index">
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Order</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="icon.jpg" alt="Ka'Taqam Café Logo" class="logo-icon"> Ka'Taqam Café
+        </a>
+      </div>
+      <nav>
+        <button class="hbm" aria-label="Toggle menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <ul>
+          <li><button class="close-btn" aria-label="Close menu">&times;</button></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Order</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1 class="big">Welcome to <span class="accent"> <br>Ka'Taqam Café!</span></h1>
+      <h1 class="big">Welcome to <br>Ka'Taqam Café!</span></h1>
       <p class="subtitle">A warm and happy experience, unique to our community.</p>
       <div class="mission-vision">
         <div class="mv-card">
@@ -35,5 +50,6 @@
       <a href="menu.html" class="cta-btn">Order Now!</a>
     </div>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>

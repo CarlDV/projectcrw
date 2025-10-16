@@ -9,104 +9,199 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Order</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="icon.jpg" alt="Ka'Taqam Café Logo" class="logo-icon"> Ka'Taqam Café
+        </a>
+      </div>
+      <nav>
+        <button class="hbm" aria-label="Toggle menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <ul>
+          <li><button class="close-btn" aria-label="Close menu">&times;</button></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Order</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section class="menu">
     <h1>⚜ Our Menu ⚜</h1>
-    <div class="menu-grid">
-      <div class="card">
-        <img src="menu-images/FOOD1.jpg" alt="Chicken Pesto Pizza">
-        <h3>Chicken Pesto Pizza</h3>
-        <p>₱280</p>
-        <button>Add to Cart</button>
+
+    <div class="menu-category">
+      <h2>Pizza</h2>
+      <div class="menu-grid">
+        <div class="card">
+          <img src="menu-images/FOOD1.jpg" alt="Chicken Pesto Pizza">
+          <div class="card-content">
+            <h3>Chicken Pesto Pizza</h3>
+            <div class="card-footer">
+              <p class="price">₱280</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD2.jpg" alt="Garlic 3 Cheese Pizza">
+          <div class="card-content">
+            <h3>Garlic 3 Cheese Pizza</h3>
+            <div class="card-footer">
+              <p class="price">₱250</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD10.jpg" alt="Hog It All Pizza">
+          <div class="card-content">
+            <h3>Hog It All Pizza</h3>
+            <div class="card-footer">
+              <p class="price">₱320</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="menu-images/FOOD2.jpg" alt="Garlic 3 Cheese Pizza">
-        <h3>Garlic 3 Cheese Pizza</h3>
-        <p>₱250</p>
-        <button>Add to Cart</button>
+    </div>
+
+    <div class="menu-category">
+      <h2>Pasta</h2>
+      <div class="menu-grid">
+        <div class="card">
+          <img src="menu-images/FOOD3.jpg" alt="Beet It Pezzo Penne">
+          <div class="card-content">
+            <h3>Beet It Pezzo Penne</h3>
+            <div class="card-footer">
+              <p class="price">₱180</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD4.jpg" alt="Shrimp and Silk Penne">
+          <div class="card-content">
+            <h3>Shrimp and Silk Penne</h3>
+            <div class="card-footer">
+              <p class="price">₱220</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD6.jpg" alt="Creamy Pesto">
+          <div class="card-content">
+            <h3>Creamy Pesto</h3>
+            <div class="card-footer">
+              <p class="price">₱190</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD9.jpg" alt="Sardine and Olive Penne">
+          <div class="card-content">
+            <h3>Sardine and Olive Penne</h3>
+            <div class="card-footer">
+              <p class="price">₱170</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD14.jpg" alt="Rustic Tomato and Beef Penne">
+          <div class="card-content">
+            <h3>Rustic Tomato and Beef Penne</h3>
+            <div class="card-footer">
+              <p class="price">₱210</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="menu-images/FOOD3.jpg" alt="Beet It Pezzo Penne">
-        <h3>Beet It Pezzo Penne</h3>
-        <p>₱180</p>
-        <button>Add to Cart</button>
+    </div>
+
+    <div class="menu-category">
+      <h2>Main Courses</h2>
+      <div class="menu-grid">
+        <div class="card">
+          <img src="menu-images/FOOD5.jpg" alt="Pork Knuckle Balbacua">
+          <div class="card-content">
+            <h3>Pork Knuckle Balbacua</h3>
+            <div class="card-footer">
+              <p class="price">₱450</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD7.jpg" alt="Fried Chicken Delight">
+          <div class="card-content">
+            <h3>Fried Chicken Delight</h3>
+            <div class="card-footer">
+              <p class="price">₱220</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD8.jpg" alt="Beef Barbeque">
+          <div class="card-content">
+            <h3>Beef Barbeque</h3>
+            <div class="card-footer">
+              <p class="price">₱200</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD11.jpg" alt="Crispy Pata">
+          <div class="card-content">
+            <h3>Crispy Pata</h3>
+            <div class="card-footer">
+              <p class="price gold">₱980</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="menu-images/FOOD4.jpg" alt="Shrimp and Silk Penne">
-        <h3>Shrimp and Silk Penne</h3>
-        <p>₱220</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD5.jpg" alt="Pork Knuckle Balbacua">
-        <h3>Pork Knuckle Balbacua</h3>
-        <p>₱450</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD6.jpg" alt="Creamy Pesto">
-        <h3>Creamy Pesto</h3>
-        <p>₱190</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD7.jpg" alt="Fried Chicken Delight">
-        <h3>Fried Chicken Delight</h3>
-        <p>₱220</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD8.jpg" alt="Beef Barbeque">
-        <h3>Beef Barbeque</h3>
-        <p>₱200</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD9.jpg" alt="Sardine and Olive Penne">
-        <h3>Sardine and Olive Penne</h3>
-        <p>₱170</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD10.jpg" alt="Hog It All Pizza">
-        <h3>Hog It All Pizza</h3>
-        <p>₱320</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD11.jpg" alt="Crispy Pata">
-        <h3>Crispy Pata</h3>
-        <p class="gold">₱980</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD12.jpg" alt="Red Cake Slice">
-        <h3>Red Cake Slice</h3>
-        <p>₱120</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD13.jpg" alt="Red Velvet Cake">
-        <h3>Red Velvet Cake</h3>
-        <p class="gold">₱950</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="card">
-        <img src="menu-images/FOOD14.jpg" alt="Rustic Tomato and Beef Penne">
-        <h3>Rustic Tomato and Beef Penne</h3>
-        <p>₱210</p>
-        <button>Add to Cart</button>
+    </div>
+
+    <div class="menu-category">
+      <h2>Desserts</h2>
+      <div class="menu-grid">
+        <div class="card">
+          <img src="menu-images/FOOD12.jpg" alt="Red Cake Slice">
+          <div class="card-content">
+            <h3>Red Cake Slice</h3>
+            <div class="card-footer">
+              <p class="price">₱120</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="menu-images/FOOD13.jpg" alt="Red Velvet Cake">
+          <div class="card-content">
+            <h3>Red Velvet Cake</h3>
+            <div class="card-footer">
+              <p class="price gold">₱950</p>
+              <button class="ordr-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

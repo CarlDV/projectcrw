@@ -343,7 +343,11 @@ nav a.active {
   box-shadow: 0 6px 14px rgba(0,0,0,0.3);
 }
 
-.gallery button {
+.upload-container {
+  margin-top: 2rem;
+}
+
+.upload-btn {
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
@@ -351,11 +355,21 @@ nav a.active {
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
 }
 
-.gallery button:hover {
+.upload-btn:hover {
   background: #555;
+}
+
+.upload-btn.uploading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+#file-upload {
+  display: none;
 }
 
 /* FOR REVIEWS SECTION */

@@ -13,7 +13,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.555);
   border-radius: 0 0 5rem 5rem;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.349);
 }
@@ -123,7 +123,7 @@ nav a.active {
 }
 
 .divbox {
-  margin-bottom: 20%;
+  margin-bottom: 2%;
 }
 
 /* FOR THE ORDER SECTION */
@@ -165,12 +165,12 @@ nav a.active {
 
 .card {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   width: 100%;
   max-width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
 }
@@ -182,7 +182,7 @@ nav a.active {
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -196,7 +196,7 @@ nav a.active {
 
 .card h3 {
   margin: 0 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #333;
   flex-grow: 1;
 }
@@ -209,7 +209,7 @@ nav a.active {
 }
 
 .price {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: bold;
   color: #333;
 }
@@ -219,19 +219,19 @@ nav a.active {
 }
 
 .ordr-btn {
-  padding: 10px;
-  background: linear-gradient(90deg, #8B4513 0%, #CD853F 100%);
+  padding: 8px 14px;
+  background: #333;
   color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: background-color 0.3s, transform 0.3s;
   font-weight: bold;
 }
 
 .ordr-btn:hover {
-  background: linear-gradient(90deg, #CD853F 0%, #8B4513 100%);
-  transform: scale(1.02);
+  background: #8B4513;
+  transform: scale(1.05);
 }
 
 /* GALLERY SECTION */
@@ -246,6 +246,10 @@ nav a.active {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   color: #333;
+}
+
+.small {
+  font-size: 15px;
 }
 
 .gallery-grid {
@@ -268,22 +272,6 @@ nav a.active {
 .gallery-grid img:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-}
-
-.upload-container {
-  margin-top: 2rem;
-}
-
-.upload-btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  background: #333;
-  color: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease, opacity 0.3s ease;
-  display: inline-block;
 }
 
 /* FOR REVIEWS SECTION */
@@ -318,48 +306,61 @@ nav a.active {
 }
 
 .review {
-  background: #fff;
+  background: #ffffff;
   color: #222;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
   border-radius: 14px;
   max-width: 420px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
-  border: 1px solid #e0e0e0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .review:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
 }
 
 .review .name {
-  color: #000000;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  color: #333;
   font-size: 1.1rem;
-  margin: 0 auto 0.7rem;
-  width: fit-content;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
-  border: 1px solid #e0e0e0;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
 }
 
 .review p {
-  margin: 0.5rem 0;
+  margin: 0;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: monospace;
+  color: #555;
+  flex-grow: 1;
 }
 
-.star {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
-  border-radius: 16px;
-  padding: 2%;
+.star-rating {
+  --star-size: 1.2rem;
+  --star-color: #ddd;
+  --star-background: #ffc107;
+  display: flex;
+  margin-bottom: 0.75rem;
 }
+
+.star-rating::before {
+  content: '★★★★★';
+  letter-spacing: 3px;
+  font-size: var(--star-size);
+  background: linear-gradient(90deg, var(--star-background) calc(var(--rating) / 5 * 100%), var(--star-color) calc(var(--rating) / 5 * 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.star-rating[data-rating="1"] { --rating: 1; }
+.star-rating[data-rating="2"] { --rating: 2; }
+.star-rating[data-rating="3"] { --rating: 3; }
+.star-rating[data-rating="4"] { --rating: 4; }
+.star-rating[data-rating="5"] { --rating: 5; }
 
 /* CONTACT SECTION */
 
@@ -523,7 +524,7 @@ nav a.active {
     text-align: center;
   }
 
-  @media (max-width: 351px) {
+  @media (max-width: 343px) {
     .all {
       display: none;
     }

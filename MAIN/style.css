@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('../background.jpg');
+  background-image: url('BACKGROUND.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

@@ -271,6 +271,7 @@ nav a.active {
 /* GALLERY SECTION */
 
 .gallery {
+  border-top: 2px solid black;
   text-align: center;
   padding: 3rem 2rem;
   background-color: rgba(0, 0, 0, 0.2);
@@ -315,6 +316,7 @@ nav a.active {
 /* FOR REVIEWS SECTION */
 
 .reviews {
+  border-top: 2px solid black;
   text-align: center;
   padding: 3rem 1rem;
   background-color: rgba(0, 0, 0, 0.2);
@@ -418,6 +420,7 @@ nav a.active {
 /* CONTACT SECTION */
 
 .contact {
+  border-top: 2px solid black;
   padding: 3rem 2rem;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(var(--blur));
@@ -493,7 +496,7 @@ nav a.active {
   gap: 20px;
   background-color: rgba(0, 0, 0, 0.555);
   backdrop-filter: blur(var(--blur));
-  border-top: 6px solid black;
+  border-top: 2px solid black;
 }
 
 .footer img {

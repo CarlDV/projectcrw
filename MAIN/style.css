@@ -836,3 +836,14 @@ form select:focus {
 .place-order-btn:hover {
   background-color: #b06b2e;
 }
+
+@media (max-width: 600px) {
+  .modal-content {
+    max-width: 300px;
+    width: 95%;
+    margin: 15% auto;
+    padding: 1.5rem;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}

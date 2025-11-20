@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Lightbox Functionality
+  // Lightbox
   const lightbox = document.getElementById('lightbox');
   if (lightbox) {
     const lightboxImg = document.getElementById('lightbox-img');
@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateCartDisplay();
 
-        // Optional: Animate cart button to give feedback
         cartBtn.style.transform = 'scale(1.3)';
         setTimeout(() => cartBtn.style.transform = 'scale(1)', 200);
       });
@@ -105,9 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
       addressError.style.display = 'none';
       addressInput.style.borderColor = '#CD853F';
 
-      alert(`Order placed successfully!\nTotal: ₱${totalAmount.toLocaleString()}\nWe will deliver to: ${addressInput.value}`);
-
-      // Reset cart
+      // Reset cart when checkedout
       cartCount = 0;
       totalAmount = 0;
       updateCartDisplay();

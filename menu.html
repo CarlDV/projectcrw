@@ -211,6 +211,45 @@
         <a href=""><img src="logos/icons8-tiktok-144.png" alt=""></a>
       </div>
     </footer>
+
+    <div id="cart-btn" class="cart-btn">
+      🛒 <span id="cart-count">0</span>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Checkout</h2>
+
+        <div class="order-summary">
+          <span>Total Items: <span id="total-items">0</span></span>
+          <span class="total-price">Total: ₱<span id="total-amount">0</span></span>
+        </div>
+
+        <form id="checkout-form">
+          <label for="fullname">FULL NAME</label>
+          <input type="text" id="fullname" required placeholder="Name Here">
+          <label for="contactnumber">CONTACT NUMBER</label>
+          <input type="tel" id="contactnumber" required placeholder="0912 345 6789">
+          <label for="address">DELIVERY ADDRESS <br><span style="font-size: 0.8rem; color: #aaa;">(AROUND CAINTA
+              ONLY.)</span></label>
+          <input type="text" id="address" required placeholder="Unit, Street, City">
+          <p id="address-error" style="color: red; display: none; font-size: 0.8rem;">Delivery is available within
+            Cainta
+            only.</p>
+          <label for="Email">EMAIL FOR RECEIPT (optional)</label>
+          <input type="email" id="email" placeholder="email@example.com">
+
+          <label for="payment">PAYMENT METHOD</label>
+          <select id="payment">
+            <option value="gcash">GCash</option>
+            <option value="cod">Cash on Delivery</option>
+          </select>
+
+          <button type="submit" class="place-order-btn">PLACE ORDER</button>
+        </form>
+      </div>
+    </div>
   </div>
   <div class="message">
     <h1>NOTICE</h1>

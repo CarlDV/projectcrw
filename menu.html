@@ -241,9 +241,12 @@
           <input type="email" id="email" placeholder="email@example.com">
 
           <label for="payment">PAYMENT METHOD</label>
-          <select id="payment">
+          <select id="payment" required>
+            <option value="" disabled selected>Select Payment Method</option>
             <option value="gcash">GCash</option>
-            <option value="cod">Cash on Delivery</option>
+            <option value="COD">Cash on Delivery</option>
+            <option value="PayMaya">PayMaya</option>
+            <option value="Card">Card</option>
           </select>
 
           <button type="submit" class="place-order-btn">PLACE ORDER</button>

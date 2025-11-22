@@ -167,7 +167,6 @@ nav a.active {
 .menu {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.555);
   backdrop-filter: blur(var(--blur));
 }
 

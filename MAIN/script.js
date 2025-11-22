@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     cartBtn.addEventListener('click', () => {
-      checkoutModal.style.display = 'block';
+      checkoutModal.style.display = 'flex';
     });
 
     closeModal.addEventListener('click', () => {

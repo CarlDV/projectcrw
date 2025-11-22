@@ -551,7 +551,7 @@ nav a.active {
   max-width: 900px;
   max-height: 85vh;
   object-fit: contain;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   animation: zoomIn 0.3s ease;
 }
@@ -587,134 +587,6 @@ nav a.active {
   cursor: pointer;
 }
 
-/* responsiveness */
-@media (max-width: 768px) {
-
-  header {
-    backdrop-filter: none;
-  }
-
-  header .header-container {
-    flex-direction: row;
-    gap: 0;
-  }
-
-  .logo a {
-    font-size: 1.5rem;
-  }
-
-  .logo-icon {
-    height: 35px;
-    width: 35px;
-  }
-
-  .hbm {
-    display: flex;
-  }
-
-  nav ul {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    height: 100vh;
-    width: 60%;
-    background-color: rgba(0, 0, 0, 0.555);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    transition: right 0.4s ease-in-out;
-    padding-top: 4rem;
-  }
-
-  nav ul.nav-active {
-    right: 0;
-  }
-
-  header {
-    background-color: rgba(0, 0, 0, 0.555);
-  }
-
-  nav a {
-    font-size: 1.2rem;
-  }
-
-
-  .box1 {
-    width: 90%;
-  }
-
-  .box1:hover {
-    transform: none;
-    color: white;
-  }
-
-  .close-btn {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2.5rem;
-    cursor: pointer;
-    line-height: 1;
-    padding: 0;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.75rem;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .review {
-    max-height: 150px;
-    overflow-y: auto;
-    transition: none;
-    transform: none;
-
-  }
-}
-
-/* SMALL DEVICES MESSAGE*/
-@media (max-width: 359px) {
-  .all {
-    display: none;
-  }
-
-  body {
-    background-color: black;
-    background-image: none;
-  }
-
-  .message {
-    display: block;
-    width: 90%;
-    max-width: 320px;
-    margin: 30vh auto;
-    color: #fff;
-    background-color: #333;
-    border-radius: 12px;
-    padding: 1%;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(252, 251, 251, 0.479);
-  }
-
-  .message h1 {
-    font-size: 10vw;
-    margin-bottom: 0.5rem;
-  }
-
-  .message p {
-    font-size: 5vw;
-  }
-}
 
 /* CART & CHECKOUT MODAL STYLES */
 .cart-btn {
@@ -887,5 +759,134 @@ form select:focus {
 
   #address-error {
     margin: 0;
+  }
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+
+  header {
+    backdrop-filter: none;
+  }
+
+  header .header-container {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .logo-icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .hbm {
+    display: flex;
+  }
+
+  nav ul {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.555);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.4s ease-in-out;
+    padding-top: 4rem;
+  }
+
+  nav ul.nav-active {
+    right: 0;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.555);
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+
+  .box1 {
+    width: 90%;
+  }
+
+  .box1:hover {
+    transform: none;
+    color: white;
+  }
+
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .review {
+    max-height: 150px;
+    overflow-y: auto;
+    transition: none;
+    transform: none;
+
+  }
+}
+
+/* SMALL DEVICES MESSAGE*/
+@media (max-width: 359px) {
+  .all {
+    display: none;
+  }
+
+  body {
+    background-color: black;
+    background-image: none;
+  }
+
+  .message {
+    display: block;
+    width: 90%;
+    max-width: 320px;
+    margin: 30vh auto;
+    color: #fff;
+    background-color: #333;
+    border-radius: 12px;
+    padding: 1%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(252, 251, 251, 0.479);
+  }
+
+  .message h1 {
+    font-size: 10vw;
+    margin-bottom: 0.5rem;
+  }
+
+  .message p {
+    font-size: 5vw;
   }
 }

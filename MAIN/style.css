@@ -127,8 +127,7 @@ nav a.active {
 }
 
 .box1 {
-  background-color: rgba(255, 255, 255, 0.329);
-  backdrop-filter: blur(var(--blur));
+  background: #00000079;
   padding: 3%;
   margin: 2%;
   border-radius: 20px;
@@ -136,7 +135,7 @@ nav a.active {
 }
 
 .box1:hover {
-  color: black;
+  color: rgb(6, 164, 255);
   transform: scale(1.05);
 }
 
@@ -345,6 +344,7 @@ nav a.active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
+  align-items: stretch;
   gap: 20px;
   width: 100%;
   max-width: 1200px;
@@ -352,35 +352,56 @@ nav a.active {
 }
 
 .review {
-  background: #ffffff;
-  color: #222;
+  background: #00000079;
+  color: #ffffff;
   padding: 1.5rem;
   border-radius: 14px;
   max-width: 420px;
+  width: 100%;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease-in-out;
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: left;
+  height: 250px;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
-.review:hover {
-  transform: scale(1.05);
+.review img {
+  width: 30px;
+}
+
+.review .date {
+  padding-left: 20px;
+  color: #fa5353;
+  font-size: 15px;
+}
+
+.review::-webkit-scrollbar {
+  width: 6px;
+}
+
+.review::-webkit-scrollbar-thumb {
+  background: rgba(7, 7, 7, 0.623);
+  border-radius: 40px;
 }
 
 .review .name {
-  color: #333;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .review p {
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: #555;
   flex-grow: 1;
 }
 
@@ -448,19 +469,19 @@ nav a.active {
 }
 
 .contact-info {
-  background: #fff;
+  background: #00000079;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   flex: 1;
   min-width: 300px;
   text-align: left;
+  color: white;
 }
 
 .contact-info h2 {
   margin-top: 0;
   font-family: 'Georgia', serif;
-  color: #333;
 }
 
 .contact-item {
@@ -470,12 +491,11 @@ nav a.active {
 
 .contact-item p {
   margin: 0;
-  color: black;
 }
 
 .contact a {
   text-decoration: none;
-  color: #8B4513;
+  color: #02f7d6;
   font-weight: bold;
 }
 

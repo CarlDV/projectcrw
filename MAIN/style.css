@@ -2,8 +2,7 @@
   --blur: 10px;
 }
 
-/* FOR THE MAIN SECTION */
-/* JUST EDIT WHAT YOU THINK DOESNT FIT THANKSS :) */
+/*MAIN SECTION */
 html {
   scroll-behavior: smooth;
 }
@@ -97,12 +96,12 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(0, 0, 2);
+  color: rgb(5, 108, 243);
   transform: scale(1.07);
 }
 
 nav a.active {
-  color: #fa5353;
+  color: #ffc6c6;
   text-decoration: underline;
 }
 

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     galleryLinks.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        lightbox.style.display = 'block';
+        lightbox.style.display = 'flex';
         lightboxImg.src = link.href;
       });
     });
